@@ -1,0 +1,125 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-color: #f2f2f2;
+    --accent-color: #d47b9a;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--card-color);
+}
+
+.nav-name {
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 50%;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--card-color);
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.card:hover {
+    background-color: #fce4ec;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+}
+
+#darkModeBtn {
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--card-color);
+}
+
+body.dark {
+    --bg-color: #222222;
+    --text-color: #ffffff;
+    --card-color: #333333;
+    --accent-color: #d47b9a;
+}
